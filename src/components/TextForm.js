@@ -7,6 +7,12 @@ console.log("clicked");
 let newText = text.toUpperCase();
 setText(newText);
     }
+    const handlelowerCase=()=>
+    {
+console.log("clicked");
+let newText = text.toLowerCase()  ;
+setText(newText);
+    }
     const Change = (event)=> 
     {
         console.log("on change");
@@ -23,6 +29,7 @@ setText(newText);
      onChange={Change} 
      style={{backgroundColor:props.mode==='light'?'white':'grey',color:props.mode==='light'?'grey':'white'}}  id="exampleFormControlTextarea1" rows="3"></textarea>
     <button type="button"   onClick={handleUpCase} className="btn btn-outline-primary  my-3">Convert to UPPERCASE</button>
+    <button type="button"   style = {{ margin :  "20px"}}onClick={handlelowerCase} className="btn btn-outline-primary  my-3">Convert to lowercase</button>
   </div>
    </div>   
     )

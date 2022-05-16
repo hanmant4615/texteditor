@@ -22,7 +22,7 @@ function App() {
   }
   return (
     <>
-  <Navbar title="HANMANT" mode ={mode} togglemode = {togglemode}></Navbar>
+  <Navbar title="Text-Editor" mode ={mode} togglemode = {togglemode}></Navbar>
   <TextForm head = " matter" mode ={mode}></TextForm>
   
     </>
